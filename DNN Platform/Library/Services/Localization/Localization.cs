@@ -1133,7 +1133,7 @@ namespace DotNetNuke.Services.Localization
         /// -----------------------------------------------------------------------------
         public static string GetString(string key, PortalSettings portalSettings)
         {
-            return LocalizationProvider.Instance.GetString(key, null, null, portalSettings);
+            return DBLocalizationProvider.Instance.GetString(key, null, null, portalSettings);
         }
 
         /// -----------------------------------------------------------------------------
@@ -1168,7 +1168,7 @@ namespace DotNetNuke.Services.Localization
         /// -----------------------------------------------------------------------------
         public static string GetString(string key, string resourceFileRoot)
         {
-            return LocalizationProvider.Instance.GetString(key, resourceFileRoot);
+            return DBLocalizationProvider.Instance.GetString(key, resourceFileRoot);
         }
 
         /// -----------------------------------------------------------------------------
@@ -1186,7 +1186,7 @@ namespace DotNetNuke.Services.Localization
         /// -----------------------------------------------------------------------------
         public static string GetString(string key, string resourceFileRoot, string language)
         {
-            return LocalizationProvider.Instance.GetString(key, resourceFileRoot, language);
+            return DBLocalizationProvider.Instance.GetString(key, resourceFileRoot, language);
         }
 
         /// -----------------------------------------------------------------------------
@@ -1227,7 +1227,7 @@ namespace DotNetNuke.Services.Localization
         /// -----------------------------------------------------------------------------
         public static string GetString(string key, string resourceFileRoot, PortalSettings portalSettings, string language, bool disableShowMissingKeys)
         {
-            return LocalizationProvider.Instance.GetString(key, resourceFileRoot, language, portalSettings, disableShowMissingKeys);
+            return DBLocalizationProvider.Instance.GetString(key, resourceFileRoot, language, portalSettings, disableShowMissingKeys);
         }
 
         #endregion
